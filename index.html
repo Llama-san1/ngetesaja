@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #btn-alert {
+            border: none;
+            border-radius: 5px;
+            padding: 2vh 5vw;
+            background-color: #98DED9;
+            font-size: 1.5rem;
+            color: white; 
+            cursor: pointer;
+            transition: 0.2s;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #btn-alert:hover {
+            opacity: 0.8;
+        }
+
+        #btn-alert:focus {
+            outline: #161D6F solid 3px;
+            outline-offset: 4px;
+        }
+    </style>
+    <title>Happy</title>
+</head>
+<body>
+
+    <button id="btn-alert" onclick="MunculinAlert()">
+        Klik aku
+    </button>
+
+    <script>
+        async function MunculinAlert() {
+            await Swal.fire("1");
+            await Swal.fire("2");
+            await Swal.fire("3");
+            await Swal.fire("4");
+            await Swal.fire("5");
+            await Swal.fire("6");
+            await Swal.fire("7");
+            await Swal.fire("8");
+            await Swal.fire("9");
+            await Swal.fire("10");
+            await Swal.fire("11");
+            await Swal.fire("12");
+            await Swal.fire("13");
+            await Swal.fire("14");
+            await Swal.fire("15");
+            await Swal.fire("16");
+            await Swal.fire("17");
+            await Swal.fire("18");
+            await Swal.fire("19");
+         
+            await Swal.fire({
+                title: "Met ultah yang ke 19th yaaa",
+                text: "Happy Birthdayy rae (Cantika Anggraeni Putri Siahaan) Semoga dipanjangkan umurnyaaa disehatkann selaluuu,semoga yang diharapkan cepat dikabulkan dan selalu dilimpahkan rezeki💗",
+                imageUrl: "idk/aset/asddw.jpg",
+                imageWidth: window.innerWidth < 768 ? 300 : 400,  // Sesuaikan gambar dengan ukuran layar
+                imageHeight: window.innerWidth < 768 ? 200 : 300, 
+                imageAlt: "Dibawa kabur"
+            });
+            await Swal.fire({
+                title: "Gimana menurutmu",
+                text: "suka apa ga suka",
+                
+                showDenyButton: true,
+                confirmButtonColor: "#3085d6",
+                confirmButtonText: "SUKAA",
+                denyButtonText: `GA SUKA 😠`,
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        title: "Yayyyyy ",
+                        text: "Met ultah yaaaaaaa say- ekhem 💗",
+                    });
+                } else if (result.isDenied) {
+                    Swal.fire({
+                        title: "hwhwhwhw",
+                        text: "Marahin Llamanya biar bikin yang bener 😭😭",
+                    });
+                }
+            });
+        }
+    </script>
+    
+</body>
+</html>
